@@ -65,7 +65,7 @@ h3 {
 .progress {
         height: 100%;
         border-radius: 10px;
-        background: #2dae49;
+        background: #18712b;
 }
 .card-bottom {
     display: flex;
@@ -239,7 +239,7 @@ body{
 
 .progress{
     height: 8px;
-    background: #eee;
+    background: #2f9c43;
     border-radius: 20px;
     overflow: hidden;
 }
