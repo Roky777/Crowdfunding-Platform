@@ -1,323 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FundRise India - Start Your Seva</title>
+
+    <link rel="stylesheet" href="./css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-     <header>
-      <div class="nav-1">
-        <button class="logo">Logo</button>
-        <div id="line"></div>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">Donation</a>
-          <a href="#">How it Works</a>
-          <a href="#">About Us</a>
-        </nav>
-      </div>
-      <button class="Sign-In">Sign In</button>
-    </header>
-
-    <section class="pic-body">
-      <div class="picture"></div>
-      <div id="button">
-        <button>DONATE NOW!</button>
-        <button>START A CAMPAIGN</button>
-      </div>
-    </section>
-
-    <section id="search-campaign">
-      <form method="get">
-        <div>
-          <input
-            type="search"
-            id="site-search"
-            name="q"
-            placeholder="search campaigns..."
-            aria-label="Search through our site content"
-            size="50"
-          />
+    <nav class="glass-header">
+        <a href="#" class="logo"><i class="fa-solid fa-sun"></i> Fund Rise</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#dona">Donation</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="about-us.html">About Us</a>
         </div>
-        <div>
-          <button>All</button>
-          <button>Animal</button>
-          <button>Education</button>
-          <button>Health</button>
-          <button>Environment</button>
-          <button>Art</button>
-        </div>
-      </form>
-    </section>
-    <main>
-        <section>
-            <div class="container">
-                <div class="header"><h2>Featured campaigns</h2>
-                        <p>Discover meaningful causes and make a difference.
-                           <br>Every contribution matters</p>
+        <button class="btn-header">Sign In</button>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-banner">
+            <div class="hero-overlay"></div>
+            <div class="hero-content-layer">
+                <div class="hero-text-group">
+                    <div class="big-text">Fund</div>
+                    <div class="stacked-text">
+                        <span>Help</span>
+                        <span>Others</span>
+                    </div>
                 </div>
-                <div class="cards">
-                    <div class="card">
-                        <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="Campaign 1">
-                        <div class="info">
-                            <h3>Help Build a School</h3>
-                            <div class="line"></div>
-                            <div class="progress-sec">
-                                    <p>Raised</p>
-                                    <p>75%- 03 days left</p>
-                                </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="funds">
-                                <h2>$ 10,000.50</h2>
-                                <p>Raised of $ 100k</p>
-                            </div>
-                            <div class="btn">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <button>Donate Now</button>
-                            </div>
-                        </div>
+                <button class="btn-fundraise-hero" onclick="window.location.href='start-fundraiser.html'">Start Fundraising</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fund, Fast As <i>Flash</i></h2>
+                <p>Fundraise at the speed of thought! Elevate your cause in just a minute with our lightning-fast
+                    fundraising platform.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+                    <h3 class="feature-title">Ignite Impact</h3>
+                    <p class="feature-desc">Spark joy by sharing your cause and the positive impact it brings. Clearly
+                        express how contributions will make a difference.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="feature-title">Spread The Word</h3>
+                    <p class="feature-desc">Leverage the speed of social media and online networks. Share your
+                        fundraising campaign swiftly across various platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <h3 class="feature-title">Connect Globally</h3>
+                    <p class="feature-desc">Build a strong social network around your cause. Encourage supporters to
+                        share the campaign within their local communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="urgent-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Urgent Fundraising!</h2>
+                <p>Time is of the essence! Join our mission NOW to make an immediate impact. Every second counts!</p>
+            </div>
+
+            <div class="filter-wrapper" id="dona">
+                <div class="filter-container">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Search campaigns...">
                     </div>
-                    <div class="card">
-                        <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="Campaign 2">
-                        <div class="info">
-                            <h3>Clean Water Initiative</h3>
-                            <div class="line"></div>
-                            <div class="progress-sec">
-                                    <p>Raised</p>
-                                    <p>75%- 03 days left</p>
-                                </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="funds">
-                                <h2>$ 10,000.50</h2>
-                                <p>Raised of $ 100k</p>
-                            </div>
-                            <div class="btn">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <button>Donate Now</button>
-                            </div>
-                        </div>
+                    <div class="filter-divider"></div>
+                    <div class="category-list">
+                        <button class="cat-btn active" data-cat="All">All</button>
+                        <button class="cat-btn" data-cat="Animal">Animal</button>
+                        <button class="cat-btn" data-cat="Education">Education</button>
+                        <button class="cat-btn" data-cat="Health">Health</button>
+                        <button class="cat-btn" data-cat="Environment">Environment</button>
+                        <button class="cat-btn" data-cat="Art">Art</button>
                     </div>
-                    <div class="card">
-                        <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="Campaign 3">
-                        <div class="info">
-                            <h3>Wildlife Conservation</h3>
-                            <div class="line"></div>
-                            <div class="progress-sec">
-                                    <p>Raised</p>
-                                    <p>75%- 03 days left</p>
-                                </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="funds">
-                                <h2>$ 10,000.50</h2>
-                                <p>Raised of $ 100k</p>
-                            </div>
-                            <div class="btn">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <button>Donate Now</button>
-                            </div>
-                        </div>
+                </div>
+            </div>
+
+            <div class="card-grid" id="campaignGrid">
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-wrapper">
+            <h4 class="stats-header">Be The Part Of FundRaisers With Over</h4>
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=200" class="float-img fi-1">
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=200" class="float-img fi-2">
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=200" class="float-img fi-3">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200" class="float-img fi-4">
+            <div class="big-stat-number">2,17,924+</div>
+            <p class="stats-sub">People From Around The World Joined</p>
+            <button class="btn-join-cta" onclick="window.location.href='start-fundraiser.html'">Join FundRaisers Now!</button>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked<br>Questions.</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">How Can I Make Donation?<i class="fa-solid fa-plus plus-icon"></i></div>
+                    <div class="faq-answer">You can donate by clicking on any campaign card and selecting "Donate". We
+                        accept UPI, Cards, and Netbanking.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is My Donation Tax-Deductible?<i class="fa-solid fa-plus plus-icon"></i>
                     </div>
-                    <div class="card">
-                        <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="Campaign 1">
-                        <div class="info">
-                            <h3>Help Build a School</h3>
-                            <div class="line"></div>
-                            <div class="progress-sec">
-                                    <p>Raised</p>
-                                    <p>75%- 03 days left</p>
-                                </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="funds">
-                                <h2>$ 10,000.50</h2>
-                                <p>Raised of $ 100k</p>
-                            </div>
-                            <div class="btn">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <button>Donate Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                        <div class="card">
-                            <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="Campaign 2">
-                            <div class="info">
-                                <h3>Clean Water Initiative</h3>
-                                <div class="line"></div>
-                                <div class="progress-sec">
-                                    <p>Raised</p>
-                                    <p>75%- 03 days left</p>
-                                </div>
+                    <div class="faq-answer">Yes, donations to registered NGOs on our platform are eligible for 80G tax
+                        exemption in India.</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-sun" style="color: var(--brand-lime);"></i> Fund Rise
+                </div>
+                <p class="footer-desc">Elevating Experience & Seize Control Of Your Fundraising Needs! Join millions
+                    making a difference today.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Donate</h4>
+                <ul>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">Medical</a></li>
+                    <li><a href="#">Disaster</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; Fund Inc. 2024. All Rights Reserved.</div>
+            <div class="footer-links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Security</a></div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="detailModal">
         
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 50%"></div>
-                                </div>
-                            </div>
-                            <div class="card-bottom">
-                            <div class="funds">
-                                <h2>$ 10,000.50</h2>
-                                <p>Raised of $ 100k</p>
-                            </div>
-                            <div class="btn">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <button>Donate Now</button>
-                            </div>
-                        </div>
-                        </div>
-                        
-                    
-                    <div class="card">
-                        <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="Campaign 3">
-                        <div class="info">
-                            <h3>Wildlife Conservation</h3>
-                            <div class="line"></div>
-                            <div class="progress-sec">
-                                    <p>Raised</p>
-                                    <p>75%- 03 days left</p>
-                                </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="funds">
-                                <h2>$ 10,000.50</h2>
-                                <p>Raised of $ 100k</p>
-                            </div>
-                            <div class="btn">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <button>Donate Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            
-           
-        </section>
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="donation-overlay" id="donationOverlay">
-    <div class="ovrheading">
-        <h2>bankrupt Vishal</h2>
     </div>
-    <div class="alldata">
-        <div class="ovrphoto">
-            <img src="https://images.gofundme.com/jPA9kW85cWSOJpIaJVregRjWaRE=/720x405/https://d2g8igdw686xgo.cloudfront.net/98532741_1767657225609757_r.png" alt="">
-        </div>
-        <div class="ovrdetail">
-            <p><span>Donation protected</span></p>
-            <div class="line"></div>
-            <p>Vishal was once known as a smooth talker.<br/>
-He gained attention by spreading lies about others, twisting stories to make himself look better.<br/><br/>
 
-At first, those lies brought him influence.<br/>
-People believed him.<br/>
-Some even trusted him with money, opportunities, and responsibilities.<br/><br/>
-
-But lies have a short life.<br/>
-Slowly, the truth began to surface.<br/>
-One by one, people realized they had been manipulated.<br/><br/>
-
-Trust disappeared.<br/>
-Friends walked away.<br/>
-Business partners cut ties.<br/><br/>
-
-Vishal continued to pretend everything was fine,<br/>
-but behind the scenes, debts were piling up.<br/>
-Poor decisions, broken relationships, and a damaged reputation led him toward bankruptcy.<br/><br/>
-
-When the money was gone, so were the people.<br/>
-No one wanted to listen anymore.<br/>
-No one wanted to help.<br/><br/>
-
-Vishal learned the hardest lesson of his life:<br/>
-You can build success on lies for a while,<br/>
-but it will always collapse in the end.<br/><br/>
-
-Reputation takes years to build,<br/>
-and only moments to destroy.
-
-</p>
-        </div>
-
-        <div class="donate-box">
-<h3>₹<span id="raisedAmount">40548</span> raised</h3>
-
-<p class="goal">
-  of ₹<span id="goalAmount">55000</span> · 1.2K donations
-</p>
-
-
-
-  <p class="live">819 people have just made a donation</p>
-
-  <div class="amounts">
-  <button data-amount="500">₹500</button>
-  <button data-amount="1000">₹1000</button>
-  <button data-amount="2000">₹2000</button>
-  <button data-amount="5000">₹5000</button>
-</div>
-
-<input type="number" id="customAmount" placeholder="Custom amount" />
-
-<button class="donate-btn" id="donateBtn">Donate now</button>
-
-  <button class="share-btn">Share</button>
-
-  <div class="circle-progress">
-  <svg width="90" height="90">
-    <circle class="circle-bg" cx="45" cy="45" r="40"></circle>
-    <circle class="circle-fill" cx="45" cy="45" r="40"></circle>
-  </svg>
-  <div class="circle-text" id="circlePercent">0%</div>
-</div>
-
-<button class="close-overlay">✕</button>
-
-
-    </div>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
