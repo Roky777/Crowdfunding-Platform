@@ -1,0 +1,201 @@
+:root {
+            --brand-green: #02a95c;
+            --brand-dark-green: #1f3d33;
+            --brand-lime: #C9F29C;
+            --text-main: #2f2f2f;
+            --text-muted: #666;
+            --bg-body: #ffffff;
+            --bg-card: #f8f9fa;
+            --radius-xl: 32px;
+            --radius-lg: 16px;
+            --radius-pill: 100px;
+            --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.03);
+            --shadow-float: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-top: 90px;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2;
+            color: var(--text-main);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.2s;
+        }
+
+        .glass-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            padding: 16px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo i {
+            color: var(--brand-lime);
+            font-size: 1.4rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: #333;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--brand-green);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--brand-green);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .btn-header {
+            padding: 12px 28px;
+            background: var(--brand-lime);
+            border: none;
+            border-radius: var(--radius-pill);
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #1f3d33;
+        }
+
+        .btn-header:hover {
+            transform: translateY(-1px);
+            filter: brightness(0.95);
+        }
+
+        @media(max-width: 900px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .about-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1f2937;
+        }
+
+        .about-hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 60px;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+
+        .content-container p {
+            margin-bottom: 24px;
+        }
+
+        .highlight-section {
+            background: #fcfcfc;
+            padding: 80px 20px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .info-card {
+            background: white;
+            max-width: 900px;
+            width: 100%;
+            padding: 60px;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-float);
+            text-align: center;
+            border: 1px solid #f0f0f0;
+        }
+
+        .card-logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--brand-green);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .info-card p {
+            font-size: 1.1rem;
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
