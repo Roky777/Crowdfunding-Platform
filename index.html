@@ -195,7 +195,64 @@
     </footer>
 
     <div class="modal-overlay" id="detailModal">
-        
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-left">
+                <h2 id="m-title" class="modal-title">Campaign Title</h2>
+                <div class="modal-img-wrapper"><img id="m-img" src="" alt="Campaign Image" class="modal-img"></div>
+
+                <div class="trust-badge">Donation protected</div>
+
+                <div class="modal-story">
+                    <h3>About this fundraiser</h3>
+
+                    <p id="m-desc">Description...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                        quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem.</p>
+                </div>
+            </div>
+
+
+            <div class="modal-right">
+                <div class="tracker-header">
+                    <span class="raised-big" id="m-raised">₹0</span>
+                    <span class="raised-sub"> raised of <strong id="m-goal">₹0</strong></span>
+                </div>
+                <div class="raised-sub" style="margin-bottom: 5px;">1.2K donations</div>
+                <div class="donor-line">819 people have just made a donation</div>
+
+
+                <div class="preset-grid">
+                    <button class="amt-btn" onclick="setAmount(500)">₹500</button>
+                    <button class="amt-btn" onclick="setAmount(1000)">₹1000</button>
+                    <button class="amt-btn" onclick="setAmount(2000)">₹2000</button>
+                    <button class="amt-btn" onclick="setAmount(5000)">₹5000</button>
+                </div>
+
+                <div class="custom-input-box">
+                    <input type="number" id="modalAmount" placeholder="Custom amount">
+                </div>
+
+                <button class="btn-donate-modal" onclick="processDonation()">Donate now</button>
+                <button class="btn-share-modal">Share</button>
+
+
+                <div class="circle-progress-container">
+                    <div class="progress-circle" id="circleProg" data-val="0%" style="--p: 0deg;"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./js/script.js"></script>
