@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Campaign - FundRise India</title>
+
+    <link rel="stylesheet" href="./css/sf.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="split-left">
+        <div class="overlay"></div>
+        <div class="left-content">
+            <a href="index.html" class="logo-white"><i class="fa-solid fa-sun" style="color: #00ff88;"></i> FundRise</a>
+
+            <div class="quote-box">
+                <h2>"We make a living by what we get, but we make a life by what we give."</h2>
+                <p>Join over 10 million people supporting charities and personal causes.</p>
+            </div>
+
+            <div style="font-size: 0.85rem; opacity: 0.7;">©️ 2024 FundRise Inc.</div>
+        </div>
+    </div>
+
+    <div class="split-right">
+        <header class="form-header">
+            <a href="index.html" class="btn-exit">Save & Exit <i class="fa-solid fa-xmark"></i></a>
+        </header>
+
+        <div class="form-container">
+
+            <div class="progress-wrapper">
+                <div class="step-count">Step <span id="stepNum">1</span> of 3</div>
+                <div class="progress-bg">
+                    <div class="progress-fill" id="progBar"></div>
+                </div>
+            </div>
+
+            <form id="fundForm" onsubmit="return false;">
+
+                <div class="form-step active" id="step1">
+                    <h1>Let's start with the basics</h1>
+                    <p class="subtitle">Where are you located and who are you fundraising for?</p>
+
+                    <div class="input-group">
+                        <label class="input-label">I am fundraising for</label>
+                        <div class="radio-grid">
+                            <div class="radio-card selected" onclick="selectRadio(this)">
+                                <i class="fa-solid fa-user"></i> Myself
+                            </div>
+                            <div class="radio-card" onclick="selectRadio(this)">
+                                <i class="fa-solid fa-users"></i> Someone else
+                            </div>
+                            <div class="radio-card" onclick="selectRadio(this)">
+                                <i class="fa-solid fa-building-ngo"></i> A Charity
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Your Location</label>
+                        <select>
+                            <option>India</option>
+                            <option>United Kingdom</option>
+                            <option>USA</option>
+                            <option>Canada</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Category</label>
+                        <select>
+                            <option>Medical</option>
+                            <option>Emergency</option>
+                            <option>Education</option>
+                            <option>Animal</option>
+                            <option>Environment</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-step" id="step2">
+                    <h1>Set your fundraising goal</h1>
+                    <p class="subtitle">How much do you aim to raise?</p>
+<div class="input-group">
+                        <label class="input-label">Goal Amount (₹)</label>
+                        <input type="number" placeholder="e.g. 50000"
+                            style="font-size: 1.5rem; font-weight: 700; color: #02a95c;">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Campaign Title</label>
+                        <input type="text" placeholder="e.g. Help Save Local Forest">
+                        <p style="font-size: 0.8rem; color: #666; margin-top: 5px;">Make it clear and catchy.</p>
+                    </div>
+                </div>
+
+                <div class="form-step" id="step3">
+                    <h1>Tell your story</h1>
+                    <p class="subtitle">Why are you fundraising? Explain to your donors.</p>
+
+                    <div class="input-group">
+                        <label class="input-label">Description</label>
+                        <textarea rows="6" placeholder="Hi, I'm raising funds for..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Cover Photo</label>
+                        <div
+                            style="border: 2px dashed #e5e7eb; padding: 40px; text-align: center; border-radius: 12px; cursor: pointer; background: #f9fafb;">
+                            <i class="fa-solid fa-image" style="font-size: 2rem; color: #ccc; margin-bottom: 10px;"></i>
+                            <p style="font-weight: 600; color: #555;">Drag and drop or click to upload</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-step" id="step4">
+                    <div class="success-box">
+                        <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+                        <h1>Your Campaign is Live!</h1>
+                        <p class="subtitle">Your fundraiser has been created successfully. Now it's time to share it
+                            with the world.</p>
+
+                        <div
+                            style="border: 1px solid #eee; border-radius: 12px; padding: 15px; display: flex; align-items: center; justify-content: space-between; background: #fdfdfd; margin-bottom: 30px;">
+                            <span style="font-family: monospace; color: #555;">fundrise.in/c/your-campaign</span>
+                            <span style="color: var(--brand-green); font-weight: 700; cursor: pointer;">Copy</span>
+                        </div>
+
+                        <a href="index.html" class="btn-next" style="display: inline-block; text-align: center;">Go to
+                            Dashboard</a>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="form-footer" id="formFooter">
+                <button class="btn-back" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                <button class="btn-next" id="nextBtn" onclick="nextPrev(1)">Continue</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 0;
+        const steps = document.querySelectorAll(".form-step");
+        const progBar = document.getElementById("progBar");
+        const stepNum = document.getElementById("stepNum");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const formFooter = document.getElementById("formFooter");
+
+        function showStep(n) {
+
+            steps.forEach(s => s.classList.remove("active"));
+
+
+            steps[n].classList.add("active");
+
+
+            if (n === 0) {
+                prevBtn.style.visibility = "hidden";
+            } else {
+                prevBtn.style.visibility = "visible";
+            }
+            if (n === (steps.length - 2)) {
+                nextBtn.innerHTML = "Complete Launch";
+                nextBtn.style.backgroundColor = "#02a95c";
+                nextBtn.innerHTML = "Continue";
+                nextBtn.style.backgroundColor = "#1f3d33";
+            }
+
+
+            if (n === steps.length - 1) {
+                formFooter.style.display = 'none';
+                document.querySelector('.progress-wrapper').style.display = 'none';
+            }
+
+
+            const total = steps.length - 1;
+            const pct = ((n + 1) / total) * 100;
+            if (n < steps.length - 1) {
+                progBar.style.width = pct + "%";
+                stepNum.innerText = n + 1;
+            }
+        }
+
+        function nextPrev(n) {
+
+            currentStep += n;
+
+            if (currentStep >= steps.length) {
+                return false;
+            }
+            showStep(currentStep);
+        }
+
+
+        function selectRadio(el) {
+            const cards = document.querySelectorAll('.radio-card');
+            cards.forEach(c => c.classList.remove('selected'));
+            el.classList.add('selected');
+        }
+
+
+        showStep(currentStep);
+    </script>
+</body>
+
+</html>
