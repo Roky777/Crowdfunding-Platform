@@ -1,3 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: 20px;
+  height: 100px;
+}
+.nav-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+.logo {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#line {
+  background-color: black;
+  height: 50px;
+  width: 2px;
+  border-radius: 50px;
+}
+.Sign-In {
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.picture {
+    position: relative;
+  background-color: black;
+  height: calc(100vh - 100px);
+  border-radius: 10px;
+}
+.pic-body {
+  background-color: black;
+  height: calc(100vh - 100px);
+  border-radius: 10px;
+}
+
+#button {
+    padding: 0px 120px;
+    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  gap: 10px;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+}
+#site-search {
+  height: 30px;
+}
+form button {
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+#search-campaign {
+  margin-top: 20px;
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 10px;
+}
+.pic-body {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+#button button {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
